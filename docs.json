@@ -64,6 +64,17 @@
             ]
           }
         ]
+      },
+      {
+      "tab": "KB",
+        "groups": [
+          {
+            "group": "Docs",
+            "pages": [
+              "KB/index"
+            ]
+          }
+        ]
       }
     ],
     "global": {

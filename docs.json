@@ -8,6 +8,15 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
+  "integrations": {
+    "posthog": {
+        "apiKey": "phc_Ion3bRVkU9YVnH8VOulaDDGyjBhnusYb4BPpAAo6D9D",
+        "apiHost": "https://eu.i.posthog.com"
+    },
+    "intercom": {
+            "appId": "xbe2ujxf"
+      }
+},
   "navigation": {
     "tabs": [
       {

@@ -1,0 +1,94 @@
+---
+- title: Inicio Rápido
+- description: Comienza a construir documentación impresionante en menos de 5 minutos
+---
+
+<script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "APIReference",
+    "name": "API Documentation",
+    "description": "Complete API reference for our platform",
+    "url": "https://docs.yoursite.com/api",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Your Company Name"
+    }
+    })}
+</script>
+
+## Configura tu desarrollo
+
+Aprende cómo actualizar tus documentos localmente y desplegarlos al público.
+
+### Editar y previsualizar
+
+<AccordionGroup>
+  <Accordion icon="github" title="Clona tus documentos localmente">
+    Durante el proceso de incorporación, creamos un repositorio en tu Github con
+    el contenido de tus documentos. Puedes encontrar este repositorio en nuestro[dashboard](https://dashboard.mintlify.com). Para clonar el repositorio
+    localmente, sigue estas[instrucciones](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+    en tu terminal.
+  </Accordion>
+
+  <Accordion icon="rectangle-terminal" title="Vista previa de cambios">
+    La vista previa te ayuda a asegurarte de que tus cambios se vean como se pretende. Hemos construido una
+    interfaz de línea de comandos para renderizar estos cambios localmente.
+
+    1. Instala el[Mintlify CLI](https://www.npmjs.com/package/mintlify) para previsualizar los
+       cambios de la documentación localmente con este comando:`npm i -g mintlify`
+    2. Ejecuta el siguiente comando en la raíz de tu documentación (donde está`docs.json`):`mintlify dev`
+
+    <Note>
+      Si actualmente estás usando el archivo de configuración heredado`mint.json`, por favor actualiza el Mintlify CLI:
+
+      `npm i -g mintlify@latest`
+      Y ejecuta el nuevo comando de actualización en tu repositorio de documentación:
+
+      `mintlify upgrade`
+      Ahora deberías estar usando el nuevo archivo de configuración`docs.json`. Siéntete libre de eliminar el archivo`mint.json` de tu repositorio.
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+### Despliega tus cambios
+
+<AccordionGroup>
+  <Accordion icon="message-bot" title="Instala nuestra aplicación de Github">
+    Nuestra aplicación de Github despliega automáticamente tus cambios en tu sitio de documentación, así que
+    no necesitas gestionar los despliegues tú mismo. Puedes encontrar el enlace para instalar en
+    tu[dashboard](https://dashboard.mintlify.com). Una vez que el bot ha sido
+    instalado con éxito, debería haber una marca de verificación junto al hash del commit
+    del repositorio.
+  </Accordion>
+
+  <Accordion icon="rocket" title="Sube tus cambios">
+    [Haz commit y sube tus cambios a
+    Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
+    para que tus cambios se actualicen en tu sitio de documentación. Si subes y no ves que
+    la aplicación de Github haya desplegado tus cambios con éxito, también puedes
+    actualizar manualmente tu documentación a través de nuestro[dashboard](https://dashboard.mintlify.com).
+  </Accordion>
+</AccordionGroup>
+
+## Actualiza tu documentación
+
+Agrega contenido directamente en tus archivos con sintaxis MDX y componentes de React. Puedes usar cualquiera de nuestros componentes, o incluso construir los tuyos propios.
+
+<CardGroup>
+  <Card title="Agregar Contenido Con MDX" icon="file" href="/es/essentials/markdown">
+    Agrega contenido a tu documentación con sintaxis MDX.
+  </Card>
+
+  <Card title="Agregar Bloques de Código" icon="square-code" href="/es/essentials/code">
+    Agrega código directamente a tu documentación con resaltado de sintaxis.
+  </Card>
+
+  <Card title="Agregar Imágenes" icon="image" href="/es/essentials/images">
+    Agrega imágenes a tu documentación para hacerla más atractiva.
+  </Card>
+
+  <Card title="Agregar Componentes Personalizados" icon="puzzle-piece" href="/es/essentials/reusable-snippets">
+    Agrega plantillas a tu documentación para hacerla más reutilizable.
+  </Card>
+</CardGroup>

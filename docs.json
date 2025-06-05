@@ -1,115 +1,17 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
+  "$schema": "https://mintlify.com/docs.json",
   "name": "Mint Starter Kit",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
-  "integrations": {
-    "posthog": {
-        "apiKey": "phc_Ion3bRVkU9YVnH8VOulaDDGyjBhnusYb4BPpAAo6D9D",
-        "apiHost": "https://eu.i.posthog.com"
-    },
-    "intercom": {
-            "appId": "xbe2ujxf"
-      }
-},
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      },
-      {
-      "tab": "Changelogs",
-        "groups": [
-          {
-            "group": "Updates",
-            "pages": [
-              "changelog/changelog"
-            ]
-          }
-        ]
-      },
-      {
-      "tab": "KB",
-        "groups": [
-          {
-            "group": "Docs",
-            "pages": [
-              "KB/index"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "favicon": "/favicon.svg",
   "navbar": {
     "links": [
       {
@@ -123,11 +25,185 @@
       "href": "https://dashboard.mintlify.com"
     }
   },
+  "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "icon": "book-open-cover",
+          "href": "https://mintlify.com/docs"
+        },
+        {
+          "anchor": "Community",
+          "icon": "slack",
+          "href": "https://mintlify.com/community"
+        },
+        {
+          "anchor": "Blog",
+          "icon": "newspaper",
+          "href": "https://mintlify.com/blog"
+        }
+      ]
+    },
+    "languages": [
+      {
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Get Started",
+                "pages": [
+                  "index",
+                  "quickstart",
+                  "development"
+                ]
+              },
+              {
+                "group": "Essentials",
+                "pages": [
+                  "essentials/markdown",
+                  "essentials/code",
+                  "essentials/images",
+                  "essentials/settings",
+                  "essentials/navigation",
+                  "essentials/reusable-snippets"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "API Reference",
+            "groups": [
+              {
+                "group": "API Documentation",
+                "pages": [
+                  "api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Endpoint Examples",
+                "pages": [
+                  "api-reference/endpoint/get",
+                  "api-reference/endpoint/create",
+                  "api-reference/endpoint/delete",
+                  "api-reference/endpoint/webhook"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Changelogs",
+            "groups": [
+              {
+                "group": "Updates",
+                "pages": [
+                  "changelog/changelog"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "KB",
+            "groups": [
+              {
+                "group": "Docs",
+                "pages": [
+                  "KB/index"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tabs": [
+          {
+            "tab": "Guías",
+            "groups": [
+              {
+                "group": "Comenzar",
+                "pages": [
+                  "es/index",
+                  "es/quickstart",
+                  "es/development"
+                ]
+              },
+              {
+                "group": "Esenciales",
+                "pages": [
+                  "es/essentials/markdown",
+                  "es/essentials/code",
+                  "es/essentials/images",
+                  "es/essentials/settings",
+                  "es/essentials/navigation",
+                  "es/essentials/reusable-snippets"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Referencia de API",
+            "groups": [
+              {
+                "group": "Documentación de API",
+                "pages": [
+                  "es/api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Ejemplos de Endpoints",
+                "pages": [
+                  "es/api-reference/endpoint/get",
+                  "es/api-reference/endpoint/create",
+                  "es/api-reference/endpoint/delete",
+                  "es/api-reference/endpoint/webhook"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Registros de cambios",
+            "groups": [
+              {
+                "group": "Actualizaciones",
+                "pages": [
+                  "es/changelog/changelog"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "KB",
+            "groups": [
+              {
+                "group": "Docs",
+                "pages": [
+                  "es/KB/index"
+                ]
+              }
+            ]
+          }
+        ],
+        "language": "es"
+      }
+    ]
+  },
   "footer": {
     "socials": {
       "x": "https://x.com/mintlify",
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  },
+  "integrations": {
+    "intercom": {
+      "appId": "xbe2ujxf"
+    },
+    "posthog": {
+      "apiKey": "phc_Ion3bRVkU9YVnH8VOulaDDGyjBhnusYb4BPpAAo6D9D",
+      "apiHost": "https://eu.i.posthog.com"
     }
   }
 }
